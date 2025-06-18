@@ -1,27 +1,31 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](fg:bright-black)\
+[](fg:black)\
 $os\
-[](bg:bright-purple fg:bright-black)\
-$hostname\
-[](fg:bright-purple bg:black)\
+[](bg:purple fg:black)\
+$username$hostname\
+[](fg:purple bg:black)\
 $git_branch$git_status$docker_context\
 [](fg:black bg:bright-black)\
 $nodejs$rust$golang$php$c$cpp$zig$lua$ocaml$python$cmake\
 [](fg:bright-black)\
-\n[](fg:bright-black)\
-$directory\
-[](fg:bright-black)\
+\n$directory\
 \n$sudo$character\
 """
 
 right_format = """$cmd_duration"""
 
 [cmd_duration]
-style = "bg:white fg:bright-white"
-format = "[ $duration]($style)"
 disabled = false
+style = "fg:bright-black"
+format = "[]($style)[ $duration](bg:bright-black fg:bright-white)[]($style)"
+
+[username]
+show_always = true
+style_root = "bg:red fg:bright-white"
+style_user = "bg:purple fg:black"
+format = "[$user]($style)"
 
 [character]
 success_symbol = "[󰇼](bold green)"
@@ -32,23 +36,42 @@ vimcmd_replace_one_symbol = "[](bold bright-purple)"
 vimcmd_visual_symbol = "[](bold yellow)"
 
 [directory]
-style = "fg:bright-white bg:bright-black"
-format = "[$path]($style)"
+style = "fg:black"
+format = "[]($style)[$path](bg:black fg:bright-white)[]($style)"
 truncation_length = 5
 truncate_to_repo = false
 truncation_symbol = "…/"
 read_only = " 󰌾"
 
 [directory.substitutions]
+"~" = ""
 ".config" = ""
 "Documents" = "󰈙"
 "Downloads" = ""
 "Music" = ""
 "Pictures" = ""
+"Dev" = ""
+"ai" = ""
+"c" = ""
+"cpp" = ""
+"c3c" = ""
+"github" = "󰊤"
+"go" = ""
+"godot" = ""
+"java" = ""
+"js" = ""
+"lua" = ""
+"nasm" = "󱄔"
+"ocaml" = ""
+"odin" = ""
+"python" = ""
+"rust" = ""
+"sh" = ""
+"zig" = ""
 
 [hostname]
 ssh_symbol = " "
-style = "bg:bright-purple fg:bright-black"
+style = "bg:purple fg:black"
 format = "[ $ssh_symbol$hostname]($style)"
 # uncomment to always show
 # ssh_only = false
@@ -75,12 +98,6 @@ staged = ""
 renamed = "󰑕"
 deleted = "󰛌"
 typechanged = "󱎋"
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:bright-black"
-format = '[[ $time](bg:bright-black fg:bright-white)]($style)'
 
 [lua]
 symbol = " "
@@ -137,7 +154,7 @@ format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
 symbol = " "
 
 [os]
-format = '[$symbol](bg:bright-black fg:white)'
+format = '[$symbol](bg:black fg:white)'
 disabled = false
 
 [os.symbols]
