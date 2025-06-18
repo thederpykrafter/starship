@@ -105,12 +105,12 @@ deleted = "󰛌"
 typechanged = "󱎋"
 
 [lua]
-symbol = " "
+symbol = ""
 style = "bg:bright-black"
 format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [ocaml]
-symbol = " "
+symbol = ""
 style = "bg:bright-black"
 format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
@@ -135,28 +135,28 @@ style = "bg:bright-black"
 format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [cpp]
-symbol = " "
+symbol = ""
 style = "bg:bright-black"
 format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [cmake]
-symbol = "| "
+symbol = "|"
 style = "bg:bright-black"
 format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 detect_files = ['CMakeLists.txt', 'CMakeCache.txt', 'makefile', 'Makefile']
 
 [python]
-symbol = " "
+symbol = ""
 style = "bg:bright-black"
 format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [zig]
-symbol = " "
+symbol = ""
 style = "bg:bright-black"
 format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [docker_context]
-symbol = " "
+symbol = ""
 
 [os]
 format = '[$symbol](bg:black fg:purple)'
