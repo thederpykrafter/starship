@@ -37,14 +37,15 @@ vimcmd_visual_symbol = "[](bold yellow)"
 
 [directory]
 style = "fg:black"
-format = "[]($style)[$path](bg:black fg:bright-white)[]($style)"
+format = "[]($style)[$read_only $path](bg:black fg:bright-white)[]($style)"
+read_only = " 󰌾"
+read_only_style = "red"
 truncation_length = 5
 truncate_to_repo = false
 truncation_symbol = "…/"
-read_only = " 󰌾"
+home_symbol = ""
 
 [directory.substitutions]
-"~" = ""
 ".config" = ""
 "Documents" = "󰈙"
 "Downloads" = ""
@@ -66,8 +67,12 @@ read_only = " 󰌾"
 "odin" = ""
 "python" = ""
 "rust" = ""
-"sh" = ""
+"bash" = ""
 "zig" = ""
+"nvim" = ""
+"tmux" = ""
+"kitty" = "󰄛"
+"starship" = ""
 
 [hostname]
 ssh_symbol = " "
@@ -101,54 +106,54 @@ typechanged = "󱎋"
 
 [lua]
 symbol = " "
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [ocaml]
 symbol = " "
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [c]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [cpp]
 symbol = " "
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [cmake]
 symbol = "| "
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 detect_files = ['CMakeLists.txt', 'CMakeCache.txt', 'makefile', 'Makefile']
 
 [python]
 symbol = " "
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [zig]
 symbol = " "
-style = "bg:#212736"
-format = '[[ $symbol](fg:bright-purple bg:#212736)]($style)'
+style = "bg:bright-black"
+format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 
 [docker_context]
 symbol = " "
