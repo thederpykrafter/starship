@@ -85,12 +85,12 @@ disabled = false
 [git_branch]
 symbol = ""
 style = "bg:black"
-format = '[[ $symbol $branch ](fg:bright-purple bg:black)]($style)'
+format = '[[ $symbol $branch](fg:bright-purple bg:black)]($style)'
 
 [git_status]
 ignore_submodules = false
 style = "bg:black"
-format = '[[($all_status$ahead_behind )](fg:bright-purple bg:black)]($style)'
+format = '[[( $all_status$ahead_behind)](fg:bright-purple bg:black)]($style)'
 conflicted = "󰦎"
 ahead = "󰮽"
 behind = "󰮷"
