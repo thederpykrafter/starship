@@ -25,7 +25,7 @@ format = "[]($style)[ $duration](bg:bright-black fg:bright-white)[]($st
 show_always = true
 style_root = "bg:red fg:bright-white"
 style_user = "bg:purple fg:black"
-format = "[$user]($style)"
+format = "[ $user]($style)"
 
 [character]
 success_symbol = "[󰇼](bold green)"
