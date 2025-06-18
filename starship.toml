@@ -159,7 +159,7 @@ format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
 symbol = " "
 
 [os]
-format = '[$symbol](bg:black fg:white)'
+format = '[$symbol](bg:black fg:purple)'
 disabled = false
 
 [os.symbols]
