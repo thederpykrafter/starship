@@ -3,13 +3,13 @@
 format = """
 [](fg:black)\
 $os\
-[](bg:purple fg:black)\
+[](bg:green fg:black)\
 $username$hostname\
-[](fg:purple bg:black)\
+[](fg:green bg:black)\
 $git_branch$git_status$docker_context\
-[](fg:black bg:bright-black)\
+[](fg:black bg:red)\
 $nodejs$rust$golang$php$c$cpp$zig$lua$ocaml$python$cmake\
-[](fg:bright-black)\
+[](fg:red)\
 \n$directory\
 \n$sudo$character\
 """
@@ -24,7 +24,7 @@ format = "[]($style)[ $duration](bg:bright-black fg:bright-white)[]($st
 [username]
 show_always = true
 style_root = "bg:red fg:bright-white"
-style_user = "bg:purple fg:black"
+style_user = "bg:green fg:black"
 format = "[ $user]($style)"
 
 [character]
