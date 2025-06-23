@@ -148,7 +148,7 @@ detect_files = ['CMakeLists.txt', 'CMakeCache.txt', 'makefile', 'Makefile']
 [python]
 symbol = ""
 style = "bg:red"
-format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
+format = '[[ $symbol( \($virtualenv\))](fg:bright-purple bg:red)]($style)'
 
 [zig]
 symbol = ""
