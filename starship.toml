@@ -106,57 +106,59 @@ typechanged = "󱎋"
 
 [lua]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [ocaml]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [c]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [cpp]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [cmake]
 symbol = "|"
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 detect_files = ['CMakeLists.txt', 'CMakeCache.txt', 'makefile', 'Makefile']
 
 [python]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [zig]
 symbol = ""
-style = "bg:bright-black"
-format = '[[ $symbol](fg:bright-purple bg:bright-black)]($style)'
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [docker_context]
 symbol = ""
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [os]
 format = '[$symbol](bg:black fg:purple)'
