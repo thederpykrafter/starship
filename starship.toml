@@ -8,7 +8,7 @@ $username$hostname\
 [](fg:green bg:black)\
 $git_branch$git_status$docker_context\
 [](fg:black bg:red)\
-$nodejs$rust$golang$php$c$cpp$zig$lua$ocaml$python$cmake\
+$nodejs$custom$perl$rust$golang$php$c$cpp$zig$lua$ocaml$sh$python$cmake\
 [](fg:red)\
 \n$directory\
 \n$sudo$character\
@@ -103,6 +103,18 @@ staged = ""
 renamed = "󰑕"
 deleted = "󰛌"
 typechanged = "󱎋"
+
+[custom.sh]
+command = "echo "
+detect_extensions = [ 'sh', 'bash', 'zsh' ]
+detect_files = [ '.bash_profile', '.bash_login', '.profile', '.bashrc', '.zprofile', '.zshrc', '.zshenv', '.zlogin', '.zlogout' ]
+style = "bg:red"
+format = '[[ $output](fg:bright-purple bg:red)]($style)'
+
+[perl]
+symbol = ""
+style = "bg:red"
+format = '[[ $symbol](fg:bright-purple bg:red)]($style)'
 
 [lua]
 symbol = ""
