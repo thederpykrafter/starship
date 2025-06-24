@@ -8,7 +8,20 @@ $username$hostname\
 [](fg:green bg:black)\
 $git_branch$git_status$docker_context\
 [](fg:black bg:red)\
-$nodejs$custom$perl$rust$golang$php$c$cpp$zig$lua$ocaml$sh$python$cmake\
+$custom\
+$cmake\
+$perl\
+$python\
+$lua\
+$odin\
+$nodejs\
+$rust\
+$golang\
+$php\
+$c\
+$cpp\
+$zig\
+$ocaml\
 [](fg:red)\
 \n$directory\
 \n$sudo$character\
@@ -23,7 +36,7 @@ format = "[]($style)[ $duration](bg:bright-black fg:bright-white)[]($st
 
 [username]
 show_always = true
-style_root = "bg:red fg:bright-white"
+style_root = "bg:green fg:bright-white"
 style_user = "bg:green fg:black"
 format = "[ $user]($style)"
 
@@ -118,6 +131,11 @@ detect_files = [ 'Makefile', 'makefile' ]
 style = "bg:red"
 # #4eaa25
 format = '[[ $output](fg:#293137 bg:red)]($style)'
+
+[odin]
+symbol = ""
+style = "bg:red"
+format = '[[ $symbol](fg:#357ecc bg:red)]($style)'
 
 [perl]
 symbol = ""
