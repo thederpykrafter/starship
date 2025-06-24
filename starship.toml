@@ -120,7 +120,6 @@ typechanged = "󱎋"
 [custom.sh]
 command = "echo 󱆃"
 detect_extensions = [ 'sh', 'bash', 'zsh' ]
-detect_files = [ '.bash_profile', '.bash_login', '.profile', '.bashrc', '.zprofile', '.zshrc', '.zshenv', '.zlogin', '.zlogout' ]
 style = "bg:red"
 # #4eaa25
 format = '[[ $output](fg:#293137 bg:red)]($style)'
