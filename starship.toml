@@ -112,6 +112,13 @@ style = "bg:red"
 # #4eaa25
 format = '[[ $output](fg:#293137 bg:red)]($style)'
 
+[custom.Makefile]
+command = "echo "
+detect_files = [ 'Makefile', 'makefile' ]
+style = "bg:red"
+# #4eaa25
+format = '[[ $output](fg:#293137 bg:red)]($style)'
+
 [perl]
 symbol = ""
 style = "bg:red"
@@ -153,10 +160,10 @@ style = "bg:red"
 format = '[[ $symbol](fg:#004482 bg:red)]($style)'
 
 [cmake]
-symbol = "|"
+symbol = ""
 style = "bg:red"
 format = '[[ $symbol](fg:#00599c bg:red)]($style)'
-detect_files = ['CMakeLists.txt', 'CMakeCache.txt', 'makefile', 'Makefile']
+detect_files = ['CMakeLists.txt', 'CMakeCache.txt']
 
 [python]
 symbol = ""
