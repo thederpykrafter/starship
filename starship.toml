@@ -1,13 +1,13 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](fg:black)\
+[](fg:black)\
 $os\
-[](bg:green fg:black)\
+[](bg:green fg:black)\
 $username$hostname\
-[](fg:green bg:black)\
+[](fg:green bg:black)\
 $git_branch$git_status$docker_context\
-[](fg:black bg:red)\
+[](fg:black bg:red)\
 $custom\
 $cmake\
 $perl\
@@ -22,7 +22,7 @@ $c\
 $cpp\
 $zig\
 $ocaml\
-[](fg:red)\
+[](fg:red)\
 \n$directory\
 \n$sudo$character\
 """
@@ -38,7 +38,7 @@ format = "[]($style)[ $duration](bg:bright-black fg:bright-white)[]($st
 show_always = true
 style_root = "bg:green fg:bright-white"
 style_user = "bg:green fg:black"
-format = "[ $user]($style)"
+format = "[$user]($style)"
 
 [character]
 success_symbol = "[󰇼](bold green)"
@@ -50,7 +50,7 @@ vimcmd_visual_symbol = "[](bold yellow)"
 
 [directory]
 style = "fg:black"
-format = "[]($style)[$read_only $path](bg:black fg:bright-white)[]($style)"
+format = "[]($style)[( $read_only) $path ](bg:black fg:bright-white)[]($style)"
 read_only = " 󰌾"
 read_only_style = "red"
 truncation_length = 5
@@ -88,9 +88,9 @@ home_symbol = "󰋜"
 "/starship/" = "//"
 
 [hostname]
-ssh_symbol = " "
-style = "bg:purple fg:black"
-format = "[ $ssh_symbol$hostname]($style)"
+ssh_symbol = "󰣀"
+style = "bg:green fg:black"
+format = "[(($ssh_symbol)󰁥$hostname)]($style)"
 # uncomment to always show
 # ssh_only = false
 disabled = false
@@ -98,23 +98,23 @@ disabled = false
 [git_branch]
 symbol = ""
 style = "bg:black"
-format = '[[ $symbol $branch](fg:bright-purple bg:black)]($style)'
+format = '[[ $symbol $branch ](fg:bright-purple bg:black)]($style)'
 
 [git_status]
 ignore_submodules = false
 style = "bg:black"
-format = '[[( $all_status$ahead_behind)](fg:bright-purple bg:black)]($style)'
+format = '[[($all_status$ahead_behind )](fg:bright-purple bg:black)]($style)'
 conflicted = "󰦎"
-ahead = "󰮽"
-behind = "󰮷"
-diverged = "󰃻"
+ahead = ""
+behind = ""
+diverged = ""
 up_to_date = ""
-untracked = ""
+untracked = "󰎔"
 stashed = "󰀼"
 modified = ""
-staged = ""
+staged = ""
 renamed = "󰑕"
-deleted = "󰛌"
+deleted = ""
 typechanged = "󱎋"
 
 [custom.sh]
@@ -199,7 +199,7 @@ style = "bg:red"
 format = '[[ $symbol](fg:#1d63ed bg:red)]($style)'
 
 [os]
-format = '[$symbol](bg:black fg:purple)'
+format = '[ $symbol ](bg:black fg:purple)'
 disabled = false
 
 [os.symbols]
