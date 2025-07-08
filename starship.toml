@@ -34,6 +34,8 @@ right_format = """$cmd_duration"""
 
 [cmd_duration]
 disabled = false
+min_time = 1
+show_milliseconds = true
 style = "fg:bright-black"
 format = "[]($style)[  $duration ](bg:bright-black fg:bright-white)[]($style)"
 
